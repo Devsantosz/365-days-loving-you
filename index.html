@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Days</title>
+    <script>
+        function mostrarDataAtual() {
+            const elementoData = document.getElementById("data-atual");
+            const data = new Date();
+            const dataFormatada = data.toLocaleDateString("pt-BR", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
+            elementoData.textContent = dataFormatada;
+        }
+    </script>
+</head>
+<body onload="mostrarDataAtual()">
+
+    <header>
+        <h1>365 Days Loving You!</h1>
+    </header>
+
+    <main>
+
+        <nav>
+
+            <h2>Data Atual</h2>
+            <p id="data-atual">Carregando...</p>
+
+        </nav>
+        <article>
+            <h3>Text for day:</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repudiandae alias incidunt illo inventore eaque iste quae rerum obcaecati natus, autem quidem vel facere qui unde fuga eum quo repellendus?</p>
+        </article>
+
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
